@@ -90,5 +90,14 @@ def won?(board)
   end
   return false
 end 
+
+
+def full?(board)
+  if board.detect{|position| position == "" || position == " "}
+    return false
+  else
+    return true 
+  end
+end
   
   
