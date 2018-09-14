@@ -130,5 +130,5 @@ def play(board)
     puts "#{winner(board)} is the winner!"
   end
 end
-play(board)
+
   
