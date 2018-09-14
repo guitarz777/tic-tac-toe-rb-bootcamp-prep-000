@@ -48,15 +48,6 @@ def turn(board)
 end
 
 
-def play(board)
-  turn = 1
-  while turn <= 9
-    turn(board)
-    turn += 1
-  end
-end
-
-
 def turn_count(board)
   count = 0
   board.each do |i|
@@ -125,4 +116,15 @@ def winner(board)
   end
 end
   
+
+def play(board)
+  turn = 1
+  while turn <= 9 && !over?(board)
+    turn(board)
+    turn += 1
+  end
+  if draw?(board)
+    return ""
+end
+
   
