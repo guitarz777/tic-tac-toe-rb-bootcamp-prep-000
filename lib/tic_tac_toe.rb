@@ -119,12 +119,15 @@ end
 
 def play(board)
   turn = 1
-  while turn <= 9 && !over?(board)
+  until turn > 9 || over?(board)
     turn(board)
     turn += 1
   end
   if draw?(board)
-    return ""
+    return "The game is a draw!"
+  elsif won?(board)
+    return "#{winner(board)}is the winner!"
+  end
 end
 
   
