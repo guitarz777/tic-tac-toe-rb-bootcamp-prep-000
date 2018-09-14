@@ -125,9 +125,9 @@ def play(board)
     turn += 1
   end
   if draw?(board)
-    return "The game is a draw!"
+    puts "The game is a draw!"
   elsif won?(board)
-    return "#{winner(board)}is the winner!"
+    puts "#{winner(board)}is the winner!"
   end
 end
 play(board)
