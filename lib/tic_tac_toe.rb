@@ -129,5 +129,5 @@ def play(board)
     return "#{winner(board)}is the winner!"
   end
 end
-
+play(board)
   
